@@ -26,7 +26,7 @@ if ( playerOneTotal > playerTwoTotal && playerThreeTotal ) {
   alert("Player 1 Total: " + playerOneTotal +  " // Player 2 Total: " + playerTwoTotal +  " // Player 3 Total: " + playerThreeTotal + " // PLAYER 1 WINS!");
 } else if ( playerTwoTotal > playerOneTotal && playerThreeTotal ) {
   alert("Player 1 Total: " + playerOneTotal +  " // Player 2 Total: " + playerTwoTotal +  " // Player 3 Total: " + playerThreeTotal + " // PLAYER 2 WINS!");
-}  else if ( playerThreeTotal > playerOneTotal && playerTwoTotal ) {
+} else if ( playerThreeTotal > playerOneTotal && playerTwoTotal ) {
   alert("Player 1 Total: " + playerOneTotal +  " // Player 2 Total: " + playerTwoTotal +  " // Player 3 Total: " + playerThreeTotal + " // PLAYER 3 WINS!");
 } else {
   alert("Player 1 Total: " + playerOneTotal +  " // Player 2 Total: " + playerTwoTotal +  " // Player 3 Total: " + playerThreeTotal + " // CONTEST IS A DRAW!");
