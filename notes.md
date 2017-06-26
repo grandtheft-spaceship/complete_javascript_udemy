@@ -78,3 +78,7 @@
     * We pass the callback function in another function as an argument
 * **Anonymous function** - A function that does not have a name; so it cannot be reused
 * **documentGetElemenyById** - select element by id
+
+### Updating Scores and Changing the Active Player
+* **!=** - performs **type coercion**
+* **!==** - DOES NOT perform type coercion
