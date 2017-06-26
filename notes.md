@@ -82,3 +82,5 @@
 ### Updating Scores and Changing the Active Player
 * **!=** - performs **type coercion**
 * **!==** - DOES NOT perform type coercion
+
+### Implementing Our 'Hold' Function and the D.R.Y. Principle
