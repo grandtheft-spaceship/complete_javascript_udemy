@@ -84,3 +84,4 @@
 * **!==** - DOES NOT perform type coercion
 
 ### Implementing Our 'Hold' Function and the D.R.Y. Principle
+### Creating a Game Initialization Function
