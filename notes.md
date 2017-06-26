@@ -85,3 +85,7 @@
 
 ### Implementing Our 'Hold' Function and the D.R.Y. Principle
 ### Creating a Game Initialization Function
+### Finishing Touches: State Variables
+
+* **State Variable** - tells us the condition of a system
+  * Used to remember the state of something
