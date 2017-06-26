@@ -58,3 +58,9 @@
 * **Method Borrowing** - userDoesNotHaveFunction.functionName = userHasFunction.functionName
 
 ## JavaScript in the Browser: DOM Manipulation and Events
+### First DOM Access and Manipulation
+
+* **document** - Object which gives us access to the DOM
+* **querySelector()** - Lets us select the first element it finds based on CSS selectors
+* **textContent()** - Manipulate plain text within selected HTML element
+* **innerHTML()** - Manipulates HTML within selected HTML element
