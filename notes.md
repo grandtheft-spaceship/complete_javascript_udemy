@@ -64,3 +64,17 @@
 * **querySelector()** - Lets us select the first element it finds based on CSS selectors
 * **textContent()** - Manipulate plain text within selected HTML element
 * **innerHTML()** - Manipulates HTML within selected HTML element
+
+### Events and Event Handling: Rolling the Dice
+
+* **Events** are notifications that are sent to notify the code that something happened on the webpage
+  * Triggered by clicking a button, resizing a window, scrolling down or pressing a key, etc.
+* **Event Listeners** - a function that performs an action based on a certain event. It waits for a specific event to happen
+  * An event can only be processed or handled once the Execution Stack is empty
+  * **Message Queue** - Part of JavaScript Engine / Where all events are that happen in the browser are put, waiting to be processed
+  * Since event listeners are functions, they get their own Execution Context that is put on the Execution Stack
+* **addEventListener( typeOfEvent, callback )**
+  * A **callback function** is a function that is called by another function
+    * We pass the callback function in another function as an argument
+* **Anonymous function** - A function that does not have a name; so it cannot be reused
+* **documentGetElemenyById** - select element by id
