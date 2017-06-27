@@ -89,3 +89,13 @@
 
 * **State Variable** - tells us the condition of a system
   * Used to remember the state of something
+
+## Advanced JavaScript: Objects and Functions (*See "5-Advanced-JS" for code examples*)
+### Everything Is an Object: Inheritance and the Prototype Chain
+
+* Primitives vs Objects
+* JavaScript is a prototyped-based language
+  * **Inheritance** works by using prototypes
+  * Every JS object has a **prototype property**
+  * Any property or method you want to be inheritable needs to be added to the original constructor's prototype property.
+* Every JS object created is an instance of the **Object constructor** 
