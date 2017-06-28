@@ -147,3 +147,11 @@
 * Closures are automatically built into JavaScript, we don't build them
 
 ### Bind, Call and Apply
+
+* **call()** - The first argument sets 'this' variable. Used to access other object's functions
+  * Use **call()** on other object's methods
+  * This is called **Method Borrowing**
+* **apply()** - Similar to call() method; the first argument will set the 'this' variable, the second arugment will be an array that stores the other arguments needed
+* **bind()** - Similar to call(), but this method does not immediately call the function. It instead creates a copy of the function in order to store it somewhere else
+  * Returns a copy of function with pre-set arguments
+    * If you do not need to really set 'this' variable, you can pass 'this' as first argument
