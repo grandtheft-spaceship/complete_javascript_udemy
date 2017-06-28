@@ -98,4 +98,52 @@
   * **Inheritance** works by using prototypes
   * Every JS object has a **prototype property**
   * Any property or method you want to be inheritable needs to be added to the original constructor's prototype property.
-* Every JS object created is an instance of the **Object constructor** 
+* Every JS object created is an instance of the **Object constructor**
+* The constructor's prototype property is NOT the prototype of that constructor itself; it's the prototype of ALL instances that are created through it
+* **Prototype Chain** - When a certain method (or property) is called, the search starts in the object itself, and if it cannot be found, the search moves on to the object's prototype. This continues until the method is found.
+
+### Creating Objects: Function Constructors
+
+* **new** - When used, an empty object is created and the constructor function, with arguments, is called
+* **this** - When creating a **constructor**, the 'this' keyword will refer to the constructor object instead of the global object. The 'new' operator points 'this' to the empty object that was created.
+* By defining properties/methods within an Object's prototype vs object literal, only one copy of the property/function needs to be created/saved instead of having them within each instance
+
+###Creating Objects: Object.create
+
+* **Object.create(object, data)** - Another way to create objects with prototypal inheritance
+  * The object passed as the first argument will contain the prototype properties/methods
+  * The data passed as the second argument will contain instance-specific data (object literals)
+* **Object.create vs constructor functions**
+  * Object.create -> builds object that inherits directly from the one passed as the first argument
+  * Constructor -> the instance created inherits from the constructor's prototype property
+
+### Primitives vs Objects
+
+* Variables containing primitives actually **hold the data within itself**
+* Variables do not actually contain objects, they **contain the reference to the place in memory where the object is stored**
+* The same rules apply to functions
+
+### First-Class Functions: Passing Functions as Arguments
+
+* A function is an instance of the Object type
+* A function behaves like any other object
+* We can store functions in a variable
+* We can pass a function as an argument to another function
+* We can return a function from a function
+* All these behaviors is what makes all functions in JavaScript **first-class functions**
+
+### First Class Functions: Functions Returning Functions
+### Immediately Invoked Function Expressions (IIFE)
+
+* Syntax -> ( function() { *logic goes here* } )();
+* If you exclude the parenthesis wrapping the anonymous function, the JavaScript parser would think you are trying to write a function declaration, and since a name is not given to the "declaration", the parser will throw an error
+* By wrapping the anonymous function in parens, we trick the parser into thinking we are writing a function expression
+
+### Closures
+
+* **Closures** - An inner functions always has access to the variables and parameters of its outer function, even after the outer function has returned.
+  * Even after a function returns and its execution context has popped off the execution stack, its variable object still sits in memory and is accessible
+    * The **scope chain** is a pointer to variable objects; it always stays in tact
+* Closures are automatically built into JavaScript, we don't build them
+
+### Bind, Call and Apply
