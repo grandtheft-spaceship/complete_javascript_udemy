@@ -155,3 +155,45 @@
 * **bind()** - Similar to call(), but this method does not immediately call the function. It instead creates a copy of the function in order to store it somewhere else
   * Returns a copy of function with pre-set arguments
     * If you do not need to really set 'this' variable, you can pass 'this' as first argument
+
+## Putting It All Together: The Budget App Project
+### Project Planning and Architecture: Part 1
+
+* To-Do List:
+  1. Add event handler to input field button
+  2. Get input values from input field
+  3. Add the new item to our data structure
+  4. Add the new item to the UI
+  5. Calculate budget
+  6. Update the UI
+* Modules
+  * Important aspect of any robust application's architecture
+  * Keeps the units of code for a project both cleanly separated and organized
+  * Encapsulate some data into privacy and expose other data publicly
+
+* Structuring Code wiih Modules
+  * UI Module - *Front end*
+    * Get input values from input field
+    * Add the new item to the UI
+    * Update the UI
+  * Data Module - *back end*
+    * Add the new item to our data structure
+    * Calculate budget
+  * Controller Module - *link between both front end and back end modules*
+    * Add event handler to input field button
+
+### Implementing the Module Pattern
+
+* We use modules to keep pieces of code inside separate, independent, and organized units
+  * They contain functions and variables that are private; making them accessible only by the module
+  * They can also contain public functions
+    * This is called **data encapsulation**
+      * Allows you to hide the implementation details of a specific module from the outside scope so that we only expose a public interface; sometimes called an **API**
+* **Module Pattern** - all you need to know are the concepts of **closures** and **IIFEs**
+  * An **IIFE** allows us to have **data privacy** because it creates a new scope that is not accessible by the outside scope
+  * The module pattern will **return an object that contains all the functions that we want to be public**
+  * **Closures** allow our inner function (which will return an object with our public function) to have access to its outer function's variables and functions
+  * **Separation of Concerns** - each part of an application should only be interested in doing one thing, independently
+    * Our budgetController and UI controller are completely separate and won't even know the other exists
+    * The third module, app **controller**, will be the link between the two modules; reading data from one and writing data to the other
+  * Modules can also take arguments because they are just **function expressions**
