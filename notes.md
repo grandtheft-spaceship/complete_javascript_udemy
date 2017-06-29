@@ -208,3 +208,5 @@
 ### Creating an Initialization Function
 
 * **Public Initialization Function**
+
+### Creating Income and Expense Function Constructors
