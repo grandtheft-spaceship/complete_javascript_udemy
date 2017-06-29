@@ -203,4 +203,5 @@
 * For event listeners, the callback function can receive an argument called the **event object**
 * **keycode property** - identifies the key we pressed for keypress events
   * **which** - used for older browsers that may not have the keycode property
-  
+
+### Reading Input Data
