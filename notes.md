@@ -205,3 +205,6 @@
   * **which** - used for older browsers that may not have the keycode property
 
 ### Reading Input Data
+### Creating an Initialization Function
+
+* **Public Initialization Function**
