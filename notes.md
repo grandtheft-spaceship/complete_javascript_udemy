@@ -210,3 +210,5 @@
 * **Public Initialization Function**
 
 ### Creating Income and Expense Function Constructors
+
+* Its better to store everything into one data structure than to have random variables just floating around
