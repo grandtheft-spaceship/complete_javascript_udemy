@@ -197,3 +197,10 @@
     * Our budgetController and UI controller are completely separate and won't even know the other exists
     * The third module, app **controller**, will be the link between the two modules; reading data from one and writing data to the other
   * Modules can also take arguments because they are just **function expressions**
+
+### Setting Up the First Event Listener
+
+* For event listeners, the callback function can receive an argument called the **event object**
+* **keycode property** - identifies the key we pressed for keypress events
+  * **which** - used for older browsers that may not have the keycode property
+  
