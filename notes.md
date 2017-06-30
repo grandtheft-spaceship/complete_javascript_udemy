@@ -219,3 +219,16 @@
 * When creating a long HTML string in JavaScript, we can start/end the string with **single quotes** and use **double quotes** throughout the string body. This will let JavaScript know that when we use the double quotes, that does NOT mean the end of the string
 * **.replace( thingToBeReplaced, thingReplacingOriginalElement)** - Searches for a string and then it replaces that string with the data that we put into the method
 * **insertAdjacentHTML( position, newElement )** - A function used to append new HTML elements to the DOM. There are 4 different **positions** you can choose to append your new element
+
+### Clearing Our Input Fields
+
+* **querySelectorAll()** - returns a **list** of all the elements that match the type of element(s) you specified
+  * if you want to select more than one HTML element, you can add a comma between each HTML element; similar to how you would in a CSS file
+  * To convert a list to an array, we can use the **slice()** function - slice() returns a copy of the array that it was called on
+    * The problem here is, slice() is an **Array method**, so we cannot call it directly on our return object because that is a list
+    * To do this, we can use the **Array** object, because **slice()** will be there in its prototype, then use the **call()** method and pass in our return object as the **this** variable in the arguments
+      **fieldsArray = Array.prototype.slice.call( fields );**
+* **forEach()** - another way to loop over arrays
+  * Call the method on the array and it will take a callback as its argument
+    * The callback can receive up to 3 arguments: the current value, the index number, and the entire array
+* **focus()** - method to reset the focus to whatever input field you choose
