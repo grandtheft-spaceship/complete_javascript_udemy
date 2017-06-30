@@ -212,3 +212,5 @@
 ### Creating Income and Expense Function Constructors
 
 * Its better to store everything into one data structure than to have random variables just floating around
+
+### Adding a New Item to Our Budget Controller
