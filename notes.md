@@ -214,3 +214,8 @@
 * Its better to store everything into one data structure than to have random variables just floating around
 
 ### Adding a New Item to Our Budget Controller
+### Adding a New Item to the UI
+
+* When creating a long HTML string in JavaScript, we can start/end the string with **single quotes** and use **double quotes** throughout the string body. This will let JavaScript know that when we use the double quotes, that does NOT mean the end of the string
+* **.replace( thingToBeReplaced, thingReplacingOriginalElement)** - Searches for a string and then it replaces that string with the data that we put into the method
+* **insertAdjacentHTML( position, newElement )** - A function used to append new HTML elements to the DOM. There are 4 different **positions** you can choose to append your new element
