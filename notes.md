@@ -237,3 +237,8 @@
 
 * Each function should have its own simple task
 * **parseFloat()** - function to convert string to floating number
+
+### Updating the Budget: Budget Controller
+
+* **-1** is a value commonly used to say that a value is non-existent
+* It's good practice to write functions that simply **get** data or **set** data
