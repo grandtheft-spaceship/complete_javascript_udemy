@@ -244,3 +244,5 @@
 * It's good practice to write functions that simply **get** data or **set** data
 
 ### Updating the Budget: UI Controller
+### Project Planning and Architecture: Step 2
+### Event Delegation
