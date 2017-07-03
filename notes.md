@@ -232,3 +232,8 @@
   * Call the method on the array and it will take a callback as its argument
     * The callback can receive up to 3 arguments: the current value, the index number, and the entire array
 * **focus()** - method to reset the focus to whatever input field you choose
+
+### Updating the Budget: Controller
+
+* Each function should have its own simple task
+* **parseFloat()** - function to convert string to floating number
