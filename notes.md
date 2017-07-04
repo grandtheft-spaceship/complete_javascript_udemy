@@ -302,3 +302,167 @@
 ### Finishing Touches: Improving the UX
 
 * **change event** - occurs each time we click on something and then change it to something else
+
+## Get Ready for the Future: ES6 / ES2015
+### What's new in ES6 / ES2015
+
+* Variable Declarations with **let** and **const**
+* Blocks and IIFEs
+* Strings
+* Arrow Functions
+* Destructuring
+* The Spread Operator
+* Rest and Default Parameters
+* Maps
+* Class and Subclasses
+* How to Use ES2015/ES6
+
+### Variable Declarations with let and const
+
+* **let** - will be used in place of **var**
+* **const** - used for constants; value should not change
+* Variables declared with **var** are now **function-scoped**, but variables declared with **let** and **const** are **block-scoped**
+* In ES6, if you try to use a variable before it is declared, you will get an error instead of 'undefined'
+  * This happens because of the **temporal dead zone**
+    * The variables are still hoisted, but you cannot use them before they are declared
+
+### Blocks and IIFEs
+
+* All you need to create a **block** is curly braces **{ }**
+* This is actually the new way to create an **IIFE** in ES6
+
+### Strings in ES6 / ES2015
+
+* **Template Literals** - New way to do string interpolation in ES6
+  * Use backticks **``** instead of quotations
+  * Don't need to use plus signs **+** anymore to add variables to strings
+  * To interpolate: **`This ${firstVariable} ${secondVariable}`**
+* **startsWith(argument)** - Determines if string starts with desired argument
+* **endsWith(argument)** - Determines if string ends with desired argument
+* **includes(argument)** - Determines if string includes desired argument
+* **repeat(integer)** - Reproduce string according to number of times set as argument
+
+### Arrow Functions: Basics
+
+* New way to write anonymous functions
+  * ES5 - array.map( function( current ) { return current + n } );
+  * ES6 - array.map( current => current + n );
+    * If you have **no arguments OR more than one argument**, you need to **include the parens around the arguments**
+      * array.map( ( current, index ) => current - array[ index - 1 ] );
+    * If you want to write **multi-line logic**, you need to **include curly braces**
+    * Also, **return is not implicit**
+      * array.map( ( current, index ) => {
+          const oldValue = current;
+          const newValue = array[ index + 1 ];
+          return newValue - oldValue;
+        } );
+
+### Arrow Functions: Lexical 'this' Keyword
+
+* Arrow functions share the lexical, or surrounding, **this** keyword
+  * They **DO NOT** get their own **this** keyword
+
+### Destructing
+
+* A way to extract data from a data structure, such as an object or an array
+  * ES5 - var john = ["John", 23];
+          var name = john[0];
+          var age = john[1];
+  * ES6 - const [name, age] = ["John", 23];
+    * Also works with objects
+  * object = {
+      firstName: "John",
+      age: 23
+  }
+  * const {firstName, age} = object;
+  * const {firstName: newVariableA, age: NewVariableB}
+
+### Arrays in ES6 / ES2015
+
+* **from()** - transforms a **nodelist to an array**
+* If you want to use the **break** or **continue** statements when looping through an array, you CANNOT use **forEach()** or **map()**; in ES5, you can ONLY use a **for loop**
+  * ES6 **for loop** syntax - **for ( const current of array ){}**
+* **findIndex()** - takes a callback, or **arrow function** that has access to current value, current index, and entire array
+* **find()** - similar to findIndex(), but returns object where statement is true, instead of index
+
+### The Spread Operator
+
+* **USED IN FUNCTION CALL**
+* Used to expand elements of an array
+* Takes an array and expands it to single values
+  * const total = addAges(...ages)
+    * The spread operator expands the array into its separate elements to call a function on; like summing all the integers of an array
+
+### Rest Parameters
+
+* **USED IN FUNCTION DECLARATION**
+* You can pass an arbitrary number of arguments to a function
+* Takes single values and transforms them into a single array
+* Looks similar to Spread Operator
+  * function funcName(...variable){};
+
+### Default Parameters
+
+* You can define default values for arguments right when you declare the params (*like in ruby*)
+
+### Maps
+
+* A brand new **key-value** data structure in ES6
+* You can use anything for the keys; primitives/objects/functions
+* Before we had to create objects and were limited to strings
+  **Setting data**
+  * const variable = new Map
+    variable.set(key, value);
+  **Getting data**
+  * variable.get(key);
+* You can now get the **size** of the Map; something you could not do with objects
+* **variable.delete(key)** - deletes key-value pair from Map
+* **variable.has(key)** - returns boolean
+* **variable.clear()** - empties Map
+* Maps are **iterable**
+  * **forEach((value, key))**
+  * **for loops**
+    * **entries** - returns all key-value pairs so you can use **destructing**
+      * for ( let [key, value] of variable.entries() ) {}
+
+### Classes
+
+* Syntactic sugar for doing **prototype-inheritance**
+* All class need the **constructor method**
+  * class Person {
+      constructor (prop1, prop2, prop3) {
+        this.prop1 = prop1;
+        this.prop2 = prop2;
+        this.prop3 = prop3;
+      }
+      functionName() {
+
+      }
+  }
+    * In class definitions, you don't need any separting punctuation; commas, semicolons, etc.
+* **Static methods** - attached to the class, but not inherited by its instances
+  * class Person {
+      constructor (prop1, prop2, prop3) {
+        this.prop1 = prop1;
+        this.prop2 = prop2;
+        this.prop3 = prop3;
+      }
+      functionName() {
+
+      }
+      static funcName() {
+
+      }
+  }
+
+### Classes with Subclasses
+
+* Inheritance from one class by another
+* class Athlete extends Person {
+    constructor(personParam1, personParam2, athleteParam1, athleteParam2) {
+      super(personParam1, personParam2);
+      this.athleteParam1 = athleteParam1;
+      this.athleteParam2 = athleteParam2;
+
+    }
+}
