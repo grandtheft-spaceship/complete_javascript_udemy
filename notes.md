@@ -284,3 +284,6 @@
 ### Project Planning and Architecture: Step 3
 ### Updating the Percentages: Controller
 ### Updating the Percentages: Budget Controller
+### Updating the Percentages: UI Controller
+
+* **nodeList** - In a DOM tree, where all of the HTML elements of our page are stored, each element is called a node. That's also why the property we used before for moving up in the DOM was called parentNode
