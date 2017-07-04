@@ -275,3 +275,8 @@
   * The first argument is the position number, or index, at which we want to start deleting
   * The second argument is the number of elements we want to delete
 * **parseInt()** - function to convert string to an integer
+
+### Deleting an Item from the UI
+[DOM Manipulation](https://blog.garstasio.com/you-dont-need-jquery/dom-manipulation/)
+
+* In JavaScript, we cannot simply delete an element, we can only delete a child of an element
