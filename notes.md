@@ -265,3 +265,13 @@
 * **split()** - a string method used to break apart string
   - You can pass an argument, the **split-string**, that will represent the break point of your choosing
   - Returns an array of strings that come **before and after the split-string**
+
+### Deleting an Item from Our Budget Controller
+* **map()** - function used to iterate over an array  
+  - Receives a callback function, which has acccess to the current element, the current index, and the entire array
+  - The difference between map and forEach is map **returns a new array**
+  - The callback function will always return something
+* **splice()** - array function used to remove elements from an array
+  * The first argument is the position number, or index, at which we want to start deleting
+  * The second argument is the number of elements we want to delete
+* **parseInt()** - function to convert string to an integer
