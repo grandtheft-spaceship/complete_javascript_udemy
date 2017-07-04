@@ -287,3 +287,13 @@
 ### Updating the Percentages: UI Controller
 
 * **nodeList** - In a DOM tree, where all of the HTML elements of our page are stored, each element is called a node. That's also why the property we used before for moving up in the DOM was called parentNode
+
+### Formatting Our Budget Numbers: String Manipulation
+
+* UI Rules for Numbers:
+  1. All numbers have a decimal part with exactly two numbers
+  2. All expenses have a minus sign in front of the number and all income will have a plus sign in front of the number
+  3. If a number is in thousands, use a comma
+* **toFixed** - method from the **number prototype**
+  * sets the number of decimal places you want to add to a number
+* **substr()** - allows us to take part of a string
