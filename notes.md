@@ -108,7 +108,7 @@
 * **this** - When creating a **constructor**, the 'this' keyword will refer to the constructor object instead of the global object. The 'new' operator points 'this' to the empty object that was created.
 * By defining properties/methods within an Object's prototype vs object literal, only one copy of the property/function needs to be created/saved instead of having them within each instance
 
-###Creating Objects: Object.create
+### Creating Objects: Object.create
 
 * **Object.create(object, data)** - Another way to create objects with prototypal inheritance
   * The object passed as the first argument will contain the prototype properties/methods
@@ -282,3 +282,4 @@
 * In JavaScript, we cannot simply delete an element, we can only delete a child of an element
 
 ### Project Planning and Architecture: Step 3
+### Updating the Percentages: Controller
