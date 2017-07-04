@@ -280,3 +280,5 @@
 [DOM Manipulation](https://blog.garstasio.com/you-dont-need-jquery/dom-manipulation/)
 
 * In JavaScript, we cannot simply delete an element, we can only delete a child of an element
+
+### Project Planning and Architecture: Step 3
