@@ -299,3 +299,6 @@
 * **substr()** - allows us to take part of a string
 
 ### Displaying the Current Month and Year
+### Finishing Touches: Improving the UX
+
+* **change event** - occurs each time we click on something and then change it to something else
