@@ -297,3 +297,5 @@
 * **toFixed** - method from the **number prototype**
   * sets the number of decimal places you want to add to a number
 * **substr()** - allows us to take part of a string
+
+### Displaying the Current Month and Year
