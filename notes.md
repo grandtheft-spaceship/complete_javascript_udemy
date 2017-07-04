@@ -246,3 +246,22 @@
 ### Updating the Budget: UI Controller
 ### Project Planning and Architecture: Step 2
 ### Event Delegation
+
+* **Event Bubbling** - when an event is triggered on some DOM element, the exact same event is also triggered on all of the parent elements all the up until it reaches the HTML element, which is the root
+* The element that caused the event to happen is called the **target element**
+  * The target element is stored as a property in the **event object**
+* **Event Delegation** - Since all parent elements will know the target element, we can attach an event handler to a parent element, wait for the event to bubble up, and then do what was intended with the target element
+  * **Cases for Event Delegation**
+    1. When we have an element with a lot of child elements that we are interested in
+    2. When we want an event handler attached to an element that is not yet in the DOM when our page is first loaded
+
+### Setting up the Delete Event Listener Using Event Delegation
+
+* **DOM Traversing** - moving around the DOM from a target element
+* **parentNode** - returns parent element of the HTML element it was called on
+* When you call a string method, like **split()**, on a string, JavaScript automatically puts a wrapper around the string and **converts it from a primitive to an object**
+  * This object then gains access to string methods
+  * The same thing also occurs with **numbers**
+* **split()** - a string method used to break apart string
+  - You can pass an argument, the **split-string**, that will represent the break point of your choosing
+  - Returns an array of strings that come **before and after the split-string**
