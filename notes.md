@@ -466,3 +466,16 @@
 
     }
 }
+
+### How to Use ES2015/ES6 Today
+
+* In order to use ES6, we need to **transpile** it back to ES5 code
+  * **Babel** is the most popular ES6 transpiler
+* We use **npm** to download Babel
+  * **$ npm install --save-dev**
+    * Install packages only in development folder and not entire computer
+  * **$ npm install babel-cli**
+  * **$ npm install babel-preset-es2015**
+  * **$ npm install babel polyfill**
+    * Helps using Map and other new ES6 constructs
+  * **$ ./node_modules/.bin/babel --presets es2015 script.js(this is production script) --out-file script-transpiled.js**
